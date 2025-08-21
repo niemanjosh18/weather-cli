@@ -8,12 +8,14 @@ This CLI tool is built with Go and uses the Google Maps Weather API. It requires
 API key. It currently pulls a key from a file that is stored outside of this repository. 
 You can make a `weather-api-key.txt` file inside of a `keys` directory that is located 
 one directory above the compiled app.
+```
+.
+|-keys/
+|   |_weather-api-key.txt
+|-weather-cli/
+    |_weather
 
-home-|
-    keys-|
-                weather-api-key.txt
-    weather-cli -|
-                weather
+```
 
 ## Build
 You can build you own version of this app with the following: 
