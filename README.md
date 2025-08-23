@@ -38,6 +38,9 @@ it yourself.
 ### Example 
 `./weather -city Cincinnati -hours 24`
 
+You can pass in the state along with the city by putting the parameter in quotes.
+`./weather -city "springfield mo"`
+
 If you add `weather` to your PATH, then you'll be able to run 
 'weather -city Cincinnati' from anywhere in your terminal.
 

@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/niemanjosh18/weather-cli/weatherUtils"
+	"net/url"
 )
 
 func main() {
@@ -20,7 +21,7 @@ func main() {
 		return
 	}
 
-	results, err := weatherUtils.GetGeocode(*cityFlag, apiKey)
+	results, err := weatherUtils.GetGeocode(url.PathEscape(*cityFlag), apiKey)
 	if err != nil {
 		fmt.Println("Error getting geocode", err)
 		return
